@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+h1 {
+  text-align: center;
+  font-size: 84px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cursor {
+  /* Shape the cursor */
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  /* Position the cursor */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* So that the cursor doesn't overlap and effect pointer events like mouse clicks or hover */
+  pointer-events: none;
+  /* For the inner cursor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Making the transitions smooth */
+  transition: width 0.3s ease, height 0.3s ease-out;
+}
+
+.inner {
+  width: 0px;
+  height: 0px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transition: width 0.3s ease, height 0.3s ease-out;
+}

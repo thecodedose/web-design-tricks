@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confetti Cursor</title>
+    <style>
+      body {
+        background-color: rgb(32, 32, 60);
+      }
+      .confetti {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        animation: 700ms fall ease-in-out;
+        opacity: 0;
+      }
+
+      @keyframes fall {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100px);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script src="main.js"></script>
+  </body>
+</html>

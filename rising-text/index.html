@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Rising Effect</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+      }
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding-right: 100px;
+      }
+
+      .rising-text {
+        font-size: 62px;
+        font-weight: bold;
+        color: #333;
+        animation: rise 1s ease-in-out forwards; /* Animation properties */
+        position: relative;
+        transform: translateY(-100px);
+        text-transform: uppercase;
+      }
+
+      @keyframes rise {
+        0% {
+          transform: translateY(100px); /* Start below the initial position */
+        }
+        100% {
+          transform: translateY(0px); /* End at original position */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script src="main.js"></script>
+  </body>
+</html>

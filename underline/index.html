@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Underline Effect</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: #493232;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+      .underline {
+        position: relative;
+        font-size: 48px;
+        font-weight: bold;
+        color: #fbe8ac;
+        text-decoration: none;
+      }
+
+      .underline::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #fbe8ac;
+        transition: width 300ms linear;
+      }
+
+      .underline:hover::before {
+        width: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="#" class="underline">HOME</a>
+      <a href="#" class="underline">HOME</a>
+      <a href="#" class="underline">HOME</a>
+    </div>
+  </body>
+</html>

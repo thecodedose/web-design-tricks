@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll-based Text Opacity</title>
+    <style>
+      body {
+        background-color: rgb(55, 49, 49);
+        color: bisque;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      .main-heading {
+        font-size: 200px;
+        font-weight: bold;
+        color: bisque;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50%;
+      }
+
+      .subtitle {
+        font-size: 32px;
+        padding: 10px;
+        opacity: 0.4;
+        font-weight: bold;
+        transition: opacity 0.3s ease; /* Smooth transition for opacity */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="main-heading">Hello & Welcome</h1>
+    <div class="flex"><div class="container"></div></div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js Simple Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"
+      integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+  </head>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #id {
+        width: 100vw;
+        height: 100vh;
+    }
+  </style>
+
+  <body>
+    <div id="webGLContainer" class="bg-[#282a30] text-white p-10">
+      <h1
+        class="text-[150px] leading-tight font-bold absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hover:tracking-widest transition-all"
+      >
+        Hello World
+      </h1>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
